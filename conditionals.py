@@ -12,10 +12,14 @@ print("------------------- Challenge 1 -------------------")
    # Prompt the user to enter their age.
    # Write conditional statements that print out whether you can drive in your city. 
 
+city = input("Enter your city:")
+age = input("Enter your age: ")
+print(age)
+print(type(age))
 
-
-
-
+#check if age is greater than or equal to 16
+if int(age) >= 16:
+   print("You can drive!")
 
 
 
@@ -32,6 +36,31 @@ print("------------------- Challenge 2 -------------------")
    # Write conditional statements that checks which is the highest and prints the highest score. 
    # Hint: Create three variables and assign them random scores. 
 
+import random
+
+score_1 = random.randint(1, 100)
+score_2 = random.randint(1, 100)
+score_3 = random.randint(1, 100)
+
+print (score_1)
+print (score_2)
+print (score_3)
+
+
+if score_1 > score_2 and score_1 > score_3:
+
+ print ("The highest score is the first value")
+
+elif score_2 > score_1 and score_2 > score_3:
+
+   print("The highest score is the second value")
+
+elif score_3 > score_1 and score_3 > score_2:
+
+   print("The highest score is the third value ")
+
+else:
+   print ("There is a draw between all the scores")
 
 
 
@@ -59,7 +88,23 @@ print("------------------- Challenge 3 -------------------")
 # Snowing: Wear gloves and a scarf 
 
 # Here's a variable to get you started:
+
+
+
 weather = "rainy"
+weather = "snowy"
+weather = "sunny"
+
+if weather == "rainy":
+   print("Bring an umbrella")
+
+elif weather == "snowy":
+   print("Wear gloves and a scarf")
+
+elif weather == "sunny":
+   print("Wear a hat and sunglasses")
+
+
 
 
 

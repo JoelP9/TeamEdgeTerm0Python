@@ -36,6 +36,7 @@ print("------------------- Challenge 2 -------------------")
    # Write conditional statements that checks which is the highest and prints the highest score. 
    # Hint: Create three variables and assign them random scores. 
 
+from calendar import MONDAY
 import random
 
 score_1 = random.randint(1, 100)
@@ -150,7 +151,6 @@ print("------------------- Challenge 4 -------------------")
 # Write a set of conditionals that will take a number from 1 to 7 
 # and print out the corresponding day of the week. 
 # Make sure to add a statement that accounts for any numbers out of range! 
-
 
 
 

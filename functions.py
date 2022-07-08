@@ -14,24 +14,59 @@
 # -------------------------------------------- 
   # Challenge 1: Let's try to write some basic functions.
 # -------------------------------------------- 
+# def "function name" (argument1, argument2, ...)
+from lib2to3.pygram import python_grammar_no_print_statement
+from traceback import print_stack
+
 
 print("------------------- Challenge 1 -------------------")
 
 # **** Challenge 1: Problem 1 ****
 # Write a function called print_message() that prints any message you want.
 
+def print_message (statement):
+	print(statement)
+
+print_message("Hello my name is Joel")
+
 
 # **** Challenge 1: Problem 2 ****
 # Write a function called print_five_messages() that calls print_message() five times.
+
+def print_five_messages(statement1):
+	print(statement1)
+	print(statement1)
+	print(statement1)
+	print(statement1)
+	print(statement1)
+
+print_five_messages("Greetings my name is Joel")
+	
 
 
 # **** Challenge 1: Problem 3 ****
 # Write a function called get_user_input() that asks the user if they'd like to print your message
 # once or five times. Then call one of the two functions above based on what the user decides.
 
+# get_user_input = input("Would you like to print your statement 1 or 5 times")
+# print(type(get_user_input))
+
+def get_user_input(statement):
+	decision = input("do you want to print 1 or 5 times?")
+	print(type(decision))
+	if decision == str("1"):
+		print(statement)
+	elif decision == str("5"):
+	 	print(statement)
+
+
+
+
 
 # **** Challenge 1: Problem 4 ****
 # Write a function called print_greeting() that prints a greeting message to the user.
+
+
 
 
 # **** Challenge 1: Problem 5 ****

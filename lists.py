@@ -28,14 +28,14 @@ names = ["Julian", "Wolf", "Alex", "Steph", "Alessandro"]
 print("names: " + str(names))  
 
 #-->TODO: Declare another list called friends with at least 5 strings inside (if you don't have 5 friends make them up!)
-
+friends = ["Jalen", "Jaden", "Devin", "Jayson", "Zion"]
 
 #this list holds numbers
 numbers = [12.9, 23.4 , 100, 3.1415 , 500, 1.20]
 print("numbers: " + str(numbers)) 
 
 #-->TODO: Declare another list and add in at least 5 numbers. Why five? I don't know. It just feels right.
-
+numbers_5 = [1 , 5, 7, 9]
 
 
 #this list has mixed data types. It's allowed in Python!
@@ -43,6 +43,8 @@ random_stuff = ["Aardvark", True, False, 1.23, "Grandpa"]
 print("random: " + str(random_stuff))
 
 #-->TODO: Declare and log a list filled with the first 5 things that come into your head, booleans, Strings, numbers are all cool,
+Things_that_come_into_head = [9, "Basketball", 10, 11, "Summer"]
+
 
 
 #-->TODO: Declare and log two more lists with whatever you want. 
@@ -54,10 +56,10 @@ print("------------------- CHALLENGE 2 -------------------")
 print("The first name is " + names[0])
 
 #-->TODO: Print the name of your best friend from your friends list
-
+print("My best friend is " +friend[3])
 
 #-->TODO: Print the first AND last elements of any list you made, or make a brand new one.
-
+print(numbers_5[0] , numbers_5(3))
 
 print("------------------- CHALLENGE 3 -------------------")
 #this code changes the value of the second element of the names list, then we print the list:
@@ -76,7 +78,9 @@ numbers[0] = times_ten(numbers[0])
 print(numbers)
 
 #-->TODO: Write another function that multiplies a number by 1000 and print the list, as above 
-
+def times_thousand(number):
+    number = number * 1000
+    return number
 
 
 #-->TODO: Replace your random list elements with anything you want, using the index. 
@@ -90,7 +94,7 @@ parent_list = [child_list_1, child_list_2]
 print("This list has babies: " + str(parent_list))
 
 #-->TODO: Store and print all the lists we have worked on thus far in a new parent list
-
+parent_list1 = [child_list_1, child_list_2]
 
 print("------------------- CHALLENGE 5 -------------------")
 
@@ -102,9 +106,9 @@ movies.append("Black Panther")
 print("Movies now has: " + str(movies))
 
 #-->TODO: Declare a list with 5 favorite songs
-
+fav_songs = ["Billie Jean", "Stayin Alive", "I will survive", "Whole Lotta Love", "Sweet Child O'mine"]
 #-->TODO: Add 2-3 more songs using .append() and print both before and after.
-
+fav_songs.append()
 #We can also remove elements using .pop(), which removes the last element or the element at the given index. You can store it after it comes out:
 cities = ["New York", "Oakland", "Las Vegas", "Topeka"]
 print("cities: " + str(cities))

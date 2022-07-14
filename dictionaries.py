@@ -39,7 +39,12 @@ print(dictionary)
 #-->TODO: Declare a new dictionary and set at least 4 properties to it including: string, boolean, number, list
 
 ##################################  MY dictionary ########################### #/
-
+joel_dict = {
+    "name": "Joel",
+    "adult": False, 
+    "age": 14,
+    "hobbies": ["basketball", "laccrose", "math", "coding"]
+}
 
 
 
@@ -52,24 +57,55 @@ print(dictionary)
 print("------------------- CHALLENGE 2 : MODIFY   -------------------")
 
 #-->TODO: Print your dictionary you created above
-
+print(joel_dict)
 
 #-->TODO: Update the dictionary you just created  by adding new properties and values, including list elements, in this section.
+
+joel_dict["favorite NBA player"] = "Jayson Tatum" 
+joel_dict["favorite basketball team"] = "warriors"
+joel_dict["city"].append("San Ramon")
 
 
 #-->TODO: Print your dictionary again and observe changes
 
+print(joel_dict)
 
 print("------------------- CHALLENGE 3 : MEHTODS   -------------------")
 
 
 #-->TODO: Make a method that will update your dictionary value. It should take in a dictionary and return it modified.
 
+grades = {'Maths': 97 , 'English': 89}
+science_grade = {'Science': 96}
+
+grades.update(science_grade)
+
+
 
 #-->TODO: Call the method.
 
+print(grades)
 
 
 print("------------------- CHALLENGE 4 : LITERALLY   -------------------")
 
 #-->TODO: Put it all together using a string literal to tell the story of your dictionary!
+
+# def return_element(list):
+#     ret_string = ""
+#          for l in list: 
+#         ret_string += str(l) + ", "
+#          if l == list[len(list)-1]: 
+#              ret_string += str(l) + ""
+#      return ret_string
+
+#  print("My name is " + str(new_dict["name"]) + ".\n" 
+#  + "Am I an adult? " + str(new_dict["adult"]) + ".\n" 
+#  + "My age is " + str(new_dict["age"]) + ".\n"
+#  + "My hobbies are " + return_element(new_dict["hobbies"]) + ".\n" 
+#  + "Has this dictionary been modified? Yes!" + new_dict["modification"] + "."
+
+
+def stringlit(dict):
+    stringlit = ""
+    for x,y
